@@ -1,0 +1,12 @@
+.header {
+  margin-top: 50px;
+}
+
+.header .main {
+  margin-top: 30px;
+}
+
+.header .body li {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

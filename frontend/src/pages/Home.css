@@ -1,0 +1,22 @@
+.centered {
+  margin-top: 50px;
+}
+.centered button {
+  width: 202px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #98c1d9;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: black;
+}
+.btn {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered button a {
+  text-decoration: none;
+}
