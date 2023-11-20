@@ -104,7 +104,6 @@ app.get("/health/:id", function (req, res, next) {
       res.json(results);
     }
   );
-  //console.log(req.params.id);
 });
 
 app.listen(5000, function () {

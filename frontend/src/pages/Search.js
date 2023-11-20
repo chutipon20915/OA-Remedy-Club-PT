@@ -14,10 +14,10 @@ function Search() {
   });
 
   const columns = [
-    {
-      name: "ลำดับที่",
-      selector: (row) => row.id,
-    },
+    // {
+    //   name: "ลำดับที่",
+    //   selector: (row) => row.id,
+    // },
     {
       name: "ชื่อ",
       selector: (row) => row.fname,
