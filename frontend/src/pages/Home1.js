@@ -22,7 +22,7 @@ function Home1() {
       </div>
 
       <div className="header">
-        <h2>ผลคะแนนการประเมิณ</h2>
+        <h2>บันทึกการออกกำลังกาย</h2>
         <div className="main">
           <ui>
             {personalInfo.map((health) => (
