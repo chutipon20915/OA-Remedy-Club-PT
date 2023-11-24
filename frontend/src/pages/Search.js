@@ -14,37 +14,33 @@ function Search() {
   });
 
   const columns = [
-    // {
-    //   name: "ลำดับที่",
-    //   selector: (row) => row.id,
-    // },
     {
       name: "ชื่อ",
-      selector: (row) => row.fname,
+      selector: (row) => row.Fname,
     },
     {
       name: "นามสกุล",
-      selector: (row) => row.lname,
+      selector: (row) => row.Lname,
     },
     {
       name: "อายุ",
-      selector: (row) => row.age,
+      selector: (row) => row.Age,
     },
     {
       name: "เพศ",
-      selector: (row) => row.gender,
+      selector: (row) => row.Gender,
     },
     {
       name: "ระยะที่",
-      selector: (row) => row.phase,
+      selector: (row) => row.Phase,
     },
     {
       name: "คู่ที่",
-      selector: (row) => row.team,
+      selector: (row) => row.Team,
     },
     {
       name: "นักกายภาพบำบัด",
-      selector: (row) => row.namept,
+      selector: (row) => row.NamePt,
     },
   ];
 

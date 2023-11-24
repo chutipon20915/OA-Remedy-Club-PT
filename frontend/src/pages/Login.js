@@ -17,8 +17,8 @@ function Login() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const jsonData = {
-      email: data.get("email"),
-      password: data.get("password"),
+      Email: data.get("Email"),
+      Password: data.get("Password"),
     };
 
     fetch("http://localhost:5000/login", {
@@ -90,19 +90,19 @@ function Login() {
                 margin="normal"
                 required
                 fullWidth
-                id="email"
+                id="Email"
                 label="อีเมล"
-                name="email"
+                name="Email"
                 autoFocus
               />
               <TextField
                 margin="normal"
                 required
                 fullWidth
-                name="password"
+                name="Password"
                 label="รหัสผ่าน"
                 type="password"
-                id="password"
+                id="Password"
               />
               <Button
                 type="submit"

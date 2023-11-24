@@ -43,7 +43,7 @@ function Home() {
   };
 
   const onGotoPage = (e) => {
-    window.location = "/Home1?id=" + e.id;
+    window.location = "/Home1?id=" + e.ID;
   };
 
   return (

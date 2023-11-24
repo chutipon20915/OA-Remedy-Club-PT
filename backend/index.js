@@ -19,15 +19,15 @@ const db = mysql.createConnection({
 });
 
 app.post("/register", jsonParser, function (req, res, next) {
-  bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
+  bcrypt.hash(req.body.Password, saltRounds, function (err, hash) {
     db.execute(
-      "INSERT INTO pt (fname, lname, age, gender, email, password) VALUES (?, ?, ?, ?, ?, ?)",
+      "INSERT INTO pt (Fname, Lname, Age, Gender, Email, Password) VALUES (?, ?, ?, ?, ?, ?)",
       [
-        req.body.fname,
-        req.body.lname,
-        req.body.age,
-        req.body.gender,
-        req.body.email,
+        req.body.Fname,
+        req.body.Lname,
+        req.body.Age,
+        req.body.Gender,
+        req.body.Email,
         hash,
       ],
       function (err, results, fields) {
@@ -43,8 +43,8 @@ app.post("/register", jsonParser, function (req, res, next) {
 
 app.post("/login", jsonParser, (req, res, next) => {
   db.execute(
-    "SELECT * FROM pt WHERE email=?",
-    [req.body.email],
+    "SELECT * FROM pt WHERE Email=?",
+    [req.body.Email],
     function (err, pt, fields) {
       if (err) {
         res.json({ status: "error", message: err });
@@ -55,11 +55,11 @@ app.post("/login", jsonParser, (req, res, next) => {
         return;
       }
       bcrypt.compare(
-        req.body.password,
-        pt[0].password,
+        req.body.Password,
+        pt[0].Password,
         function (err, isLogin) {
           if (isLogin) {
-            var token = jwt.sign({ email: pt[0].email }, secret, {
+            var token = jwt.sign({ Email: pt[0].Email }, secret, {
               expiresIn: "1h",
             });
             res
@@ -97,9 +97,9 @@ app.get("/health", function (req, res, next) {
   });
 });
 
-app.get("/health/:id", function (req, res, next) {
+app.get("/health/:ID", function (req, res, next) {
   db.query(
-    `SELECT * FROM health WHERE id = ${req.params.id}`,
+    `SELECT * FROM health WHERE ID = ${req.params.ID}`,
     function (err, results, fields) {
       res.json(results);
     }

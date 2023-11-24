@@ -27,11 +27,11 @@ function Home1() {
           <ui>
             {personalInfo.map((health) => (
               <li>
-                ชื่อ: {health.fname}
+                ชื่อ: {health.Fname}
                 <br />
-                นามสกุล: {health.lname}
+                นามสกุล: {health.Lname}
                 <br />
-                ระยะที่: {health.phase}
+                ระยะที่: {health.Phase}
               </li>
             ))}
           </ui>
@@ -40,17 +40,17 @@ function Home1() {
           <ui>
             {personalInfo.map((health) => (
               <li>
-                ข้อที่ 1 : ระดับความปวด {health.question1}
+                ข้อที่ 1 : ระดับความปวด {health.Question1}
                 <br />
-                ข้อที่ 2 : ระดับความปวด {health.question2}
+                ข้อที่ 2 : ระดับความปวด {health.Question2}
                 <br />
-                ข้อที่ 3 : ระดับความปวด {health.question3}
+                ข้อที่ 3 : ระดับความปวด {health.Question3}
                 <br />
-                ข้อที่ 4 : ระดับความปวด {health.question4}
+                ข้อที่ 4 : ระดับความปวด {health.Question4}
                 <br />
-                ข้อที่ 5 : ระดับความปวด {health.question5}
+                ข้อที่ 5 : ระดับความปวด {health.Question5}
                 <br />
-                ข้อที่ 6 : ระดับความปวด {health.question6}
+                ข้อที่ 6 : ระดับความปวด {health.Question6}
               </li>
             ))}
           </ui>
