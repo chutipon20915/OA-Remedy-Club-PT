@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const secret = "Fullstack-Login";
 const jwt = require("jsonwebtoken");
+const PORT = 5000;
 
 var app = express();
 app.use(cors());
@@ -106,6 +107,6 @@ app.get("/health/:ID", function (req, res, next) {
   );
 });
 
-app.listen(5000, function () {
-  console.log("Listening Localhost port 5000..");
+app.listen(PORT, function () {
+  console.log(`Listening Localhost port ${PORT}..`);
 });
