@@ -42,7 +42,7 @@ app.post("/register", jsonParser, function (req, res, next) {
   });
 });
 
-app.post("/login", jsonParser, (req, res, next) => {
+app.post("/login", jsonParser, function (req, res, next) {
   db.execute(
     "SELECT * FROM pt WHERE Email=?",
     [req.body.Email],
