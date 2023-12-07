@@ -13,7 +13,7 @@ var app = express();
 app.use(cors());
 app.use(express.json());
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
   host: "localhost",
   user: "root",
   database: "oa_xammp",
