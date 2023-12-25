@@ -2,11 +2,11 @@ Download file "OA-Remedy-Club-PT"
 
 ########## backend ##########
 
-cd backend folder
-npm i
-npm start
+1. cd backend folder
+2. npm i
+3. npm start
 ########## frontend ##########
 
-cd frontend folder
-npm i
-npm start
+1. cd frontend folder
+2. npm i
+3. npm start
