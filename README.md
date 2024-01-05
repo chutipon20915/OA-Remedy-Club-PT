@@ -1,13 +1,51 @@
-Download file "OA-Remedy-Club-PT"
+# Full-stack ไฟล์โค้ดสำหรับนักกายภาพบำบัด
 
-########## backend ##########
+เป็นโปรแกรมการทำงานแบ่งออกเป็น 2 ส่วน ประกอบไปด้วยส่วนของ Frontend ใช้ html css javascript มี Reactjs เป็นเฟรมเวิค และ Backend ใช้ nodejs มีการใช้ Expressjs เป็นเฟรมเวิคในการพัฒนา
+โดยมีขั้นตอนในการติดตั้งดังนี้ 
 
-1. cd backend folder
-2. npm i
-3. npm start
+## ขั้นตอนในการติดตั้ง
 
-########## frontend ##########
+``` bash
+Download "OA-Remedy-Club-PT"
+```
 
-1. cd frontend folder
-2. npm i
-3. npm start
+## backend
+
+``` bash
+1. cd OA-Remedy-Club-PT
+```
+
+``` bash
+2. cd backend 
+```
+
+``` bash
+3. npm i
+```
+
+``` bash
+4. npm start
+```
+
+
+## frontend 
+
+``` bash
+1. cd OA-Remedy-Club-PT
+```
+
+``` bash
+2. cd frontend 
+```
+
+``` bash
+3. npm i
+```
+
+``` bash
+4. npm start
+```
+
+
+
+
