@@ -1,0 +1,17 @@
+project
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── Main.java
+│   │   └── resources
+│   │       └── config.xml
+│   ├── test
+│   │   └── java
+│   │       └── com
+│   │           └── example
+│   │               └── MainTest.java
+├── docs
+├── lib
+└── README.md
